@@ -7,13 +7,23 @@ Este é o backend do projeto SupraPrime, uma aplicação para gerenciamento de u
 
 ## Configuração
 
-1. Clone o repositório:
+### Pré-requisitos
+
+1. **XAMPP**: Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixar o XAMPP [aqui](https://www.apachefriends.org/index.html).
+
+### Passos para Configuração
+
+1. **Clone o repositório**:
     ```sh
     git clone https://github.com/lucastamashirolyt/SupraPrime_backend.git
     cd SupraPrime_backend
     ```
 
-2. Configure o banco de dados no arquivo `api/config.php`:
+2. **Mover o projeto para o diretório do XAMPP**:
+    - Copie o diretório clonado para o diretório `htdocs` do XAMPP. O caminho padrão é `C:\xampp\htdocs` no Windows.
+
+3. **Configurar o banco de dados**:
+    - Abra o arquivo `api/config.php` e configure as credenciais do banco de dados:
     ```php
     $servername = "localhost";
     $username = "root";
@@ -21,10 +31,16 @@ Este é o backend do projeto SupraPrime, uma aplicação para gerenciamento de u
     $dbname = "auth_app"; // Atualize conforme necessário
     ```
 
-3. Teste a conexão com o banco de dados:
+4. **Iniciar o XAMPP**:
+    - Abra o painel de controle do XAMPP.
+    - Inicie os módulos **Apache** e **MySQL** clicando em "Start" ao lado de cada um.
+
+5. **Testar a conexão com o banco de dados**:
+    - No terminal, execute:
     ```sh
     php api/testConfig.php
     ```
+    - Você deve ver a mensagem "Conexão com o banco de dados estabelecida com sucesso!" se tudo estiver configurado corretamente.
 
 ## Endpoints da API
 
@@ -152,4 +168,4 @@ Este é o backend do projeto SupraPrime, uma aplicação para gerenciamento de u
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
