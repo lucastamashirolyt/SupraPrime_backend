@@ -8,6 +8,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirecionar para a página de login
-header('Location: /SupraPrime3/view/login.php');
+header('Location: /SupraPrime/view/login.php');
 exit();
 ?>
